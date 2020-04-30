@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|VT323&display=swap');
+
+.container {
+  max-width: 960px;
+}
+
+.hero-title {
+  font-size: 60px;
+}
+
+.elevator-pitch {
+  // font-family: 'VT323', monospace;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 26px;
+  border-top: 1px solid #ababab;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.main-button {
+  width: 220px;
+  height: 42px;
+  margin: 0.7rem;
+  font-size: 17px !important;
+  // background-color: #3eaf7c !important;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.line-1{
+  width: 70px;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  // font-family: 'Fira Mono', monospace;
+  // font-family: 'Share Tech Mono', monospace;
+  font-family: 'VT323', monospace;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
