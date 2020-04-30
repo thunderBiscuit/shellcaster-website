@@ -54,9 +54,9 @@ function LandingPage() {
           paddingRight: "5rem",
         }}
       >
-        <button className="button is-large is-primary main-button">Read Our Docs</button>
-        <button className="button is-large is-info main-button">Download the Binaries</button>
-        <button className="button is-large is-info main-button">Compile from Source</button>
+        <button className="button is-large main-button">Read Our Docs</button>
+        <button className="button is-large main-button">Download the Binaries</button>
+        <button className="button is-large main-button">Compile from Source</button>
       </div>
     </Layout>
   )

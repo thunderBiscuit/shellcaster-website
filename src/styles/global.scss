@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono:400,500|VT323&display=swap');
 
 .container {
   max-width: 960px;
@@ -27,7 +27,8 @@
   height: 42px;
   margin: 0.7rem;
   font-size: 17px !important;
-  // background-color: #3eaf7c !important;
+  font-family: 'Share Tech Mono', monospace;
+  border-color: #ababab;
   opacity: 0;
   animation-name: fadeIn;
   animation-delay: 4s;
