@@ -47,7 +47,7 @@ function LandingPage() {
       <div className="buttons-section">
         <button className="button is-large main-button">Read Our Docs</button>
         <button className="button is-large main-button">Download the Binaries</button>
-        <button className="button is-large main-button">Compile from Source</button>
+        <a className="button is-large main-button" href="https://github.com/jeff-hughes/shellcaster" target="_blank" rel="noopener noreferrer">Compile from Source</a>
       </div>
     </Layout>
   )
