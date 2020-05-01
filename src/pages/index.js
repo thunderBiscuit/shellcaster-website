@@ -8,40 +8,11 @@ import shellcaster from "../images/shellcaster-logo.png"
 function LandingPage() {
   return (
     <Layout>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          marginTop: "5rem",
-        }}
-      >
-        <img src={shellcaster} alt="Ferris Rocking in the Free World" style={{ maxWidth: "300px" }}/>
+      <div className="hero">
+        <img id="rockingferris" src={shellcaster} alt="Ferris Rocking in the Free World" />
       </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          marginTop: "0.5rem",
-          marginBottom: "2rem",
-        }}
-      >
-        <h1
-          class="title hero-title"
-          style={{ marginBottom: "0rem", fontWeight: 400 }}
-        >
-          <p class="line-1 anim-typewriter">ShellCaster</p>
-        </h1>
-      </div>
-      <div 
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          marginBottom: "3rem",
-        }}
-      >
+      <div className="main-section">
+        <p className="shellcaster-title anim-typewriter">ShellCaster</p>
         <p className="elevator-pitch">A lightweight command line podcast manager</p>
       </div>
       <div className="buttons-section">
