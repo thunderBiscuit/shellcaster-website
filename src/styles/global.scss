@@ -14,6 +14,7 @@
   font-family: 'Share Tech Mono', monospace;
   font-size: 26px;
   border-top: 1px solid #ababab;
+  text-align: center;
   opacity: 0;
   animation-name: fadeIn;
   animation-delay: 2s;
@@ -23,18 +24,57 @@
 }
 
 .main-button {
-  width: 220px;
+  min-width: 230px;
   height: 42px;
   margin: 0.7rem;
   font-size: 17px !important;
   font-family: 'Share Tech Mono', monospace;
   border-color: #ababab;
+
+  // text and border buttons
+  color: #ff2600;
+  border-color: #ff2600;
+
+  // // full colour buttons
+  // color: #ffffff;
+  // border-color: #ff2600;
+  // background-color: #ff2600 !important;
+
+  // animation
   opacity: 0;
   animation-name: fadeIn;
   animation-delay: 4s;
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.main-button:hover {
+  color: #ffffff;
+  border-color: #ff2600;
+  background-color: #ff2600 !important;
+}
+
+.buttons-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .container {
+    margin: 0px 32px;
+  }
+  .buttons-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 .line-1{
@@ -44,20 +84,21 @@
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  // font-family: 'Fira Mono', monospace;
   // font-family: 'Share Tech Mono', monospace;
   font-family: 'VT323', monospace;
 }
 
-/* Animation */
 .anim-typewriter{
   animation: typewriter 3s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+  blinkTextCursor 500ms steps(44) infinite normal;
 }
+
+// Animations
 @keyframes typewriter{
   from{width: 0;}
   to{width: 24em;}
 }
+
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}

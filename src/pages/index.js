@@ -44,16 +44,7 @@ function LandingPage() {
       >
         <p className="elevator-pitch">A lightweight command line podcast manager</p>
       </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          // flexDirection: "column",
-          justifyContent: "space-around",
-          paddingLeft: "5rem",
-          paddingRight: "5rem",
-        }}
-      >
+      <div className="buttons-section">
         <button className="button is-large main-button">Read Our Docs</button>
         <button className="button is-large main-button">Download the Binaries</button>
         <button className="button is-large main-button">Compile from Source</button>
